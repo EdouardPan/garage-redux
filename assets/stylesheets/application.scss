@@ -1,4 +1,62 @@
 .app {
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 5px;
+  display: flex;
+  background-color: rgb(230,230,230);
 }
+
+.left-side{
+  width: 250px;
+  padding: 20px;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px rgb(200,200,200);
+  height:90vh;
+  background-color: white;
+}
+
+.right-side{
+  flex-grow:1;
+  display:flex;
+  flex-direction: column;
+  .car{
+    margin-bottom:5px;
+    padding:10px;
+    box-shadow: 1px 1px 1px rgb(200,200,200);
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    position:relative;
+    span{
+      font-weight: bold;
+    }
+    .plate{
+      padding:10px 20px;
+      margin-top: 10px;
+      border:2px solid black;
+      font-weight:bold;
+      width:40%;
+      text-align: center;
+    }
+    .delete{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      &:hover{
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.form-new{
+  width: 50%;
+  padding:20px;
+  margin:auto;
+  background-color:white;
+  box-shadow: 1px 1px 1px rgb(200,200,200);
+}
+
